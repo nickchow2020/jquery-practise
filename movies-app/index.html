@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Movie App</title>
+</head>
+<body>
+    <div id="appWrap">
+        <div id="app">
+            <h1>Movies App</h1>
+            <form>
+                <label for="title">Movie:
+                    <input type="text" placeholder="Title" id="title"/><br>
+                </label>
+                <label for="rating">
+                    <span>Rating:<em id="rate">2</em></span>
+                    <input type="range" min="1" max="10" id="rating" value="0"/>
+                </label><br> 
+                <input type="submit" />
+            </form>
+        </div>
+        <div id="movies">
+            <h1>Movie List</h1>
+            <button id="sortAlp">Sort By Alphabet</button>
+            <table id="list">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

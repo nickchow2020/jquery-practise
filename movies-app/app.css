@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Coda Caption', sans-serif;
+    text-shadow: 5px 5px 10px blue;
+    color: white;
+}
+
+body{
+    background-image: linear-gradient(34deg, tomato, blue);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+ul li{
+    list-style-type: none;
+    margin-bottom: 1rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#appWrap{
+    width: 50%;
+    margin: auto;
+    min-height: 500px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 1px 2px 14px 1px black;
+    background-image: url('background.svg');
+    display: flex;
+    justify-content: center;
+}
+
+#movies{
+    border-left: solid 1px black;
+    flex-grow: 2;
+    text-align: center;
+}
+
+#app{
+    flex-grow: 1;
+    text-align: center;
+}
+
+form{
+    width: 100%;
+}
+
+label{
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+input[type="text"]{
+    width: 50%;
+    margin-bottom: 2rem;
+    height: 2.5rem;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    transition: .6s ;
+}
+
+input[type="range"]{
+    width: 48%;
+    margin-bottom: 3rem;
+}
+
+input[type="text"]:focus{
+    background-color: lightyellow;
+}
+
+input[type="submit"]{
+    width: 200px;
+    padding: 0 1rem;
+    font-size: 1.2rem
+}
+
+table{
+    width: 100%;
+}
+
+#sort{
+    margin-bottom: 1rem;
+}
